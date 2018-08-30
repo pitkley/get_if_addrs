@@ -337,7 +337,7 @@ mod getifaddrs_windows {
         // Loads more follows, but I'm not bothering to map these for now
         pub first_prefix: *const IpAdapterPrefix,
     }
-    #[link(name = "Iphlpapi")]
+    #[link(name = "iphlpapi")]
     extern "system" {
         /// get adapter's addresses
         fn GetAdaptersAddresses(
